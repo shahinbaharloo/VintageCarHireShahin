@@ -9,34 +9,35 @@
     <title>Vintage Car Hire</title>
 </head>
 <body>
-<header>
-        <!-- Navbar starts here -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">Navbar</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                  <a class="nav-link active" aria-current="page" href="#">Home</a>
-                  <a class="nav-link" href="#">Features</a>
-                  <a class="nav-link" href="#">Pricing</a>
-                  <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+    <header>
+            <!-- Navbar starts here -->
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#"><img src="./img/logo.png" alt="logo" width="30" height="24"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                    <a class="nav-link active" href="#caristing">Cars</a>
+                    <a class="nav-link" href="#enquiries">Enquiries</a>
+                    <a class="nav-link" href="#contact">Contact</a>
+                    </div>
                 </div>
-              </div>
+                </div>
+            </nav>
+                    <!-- Navbar ends here -->
+            <div id="header">
+            <h1>VINTAGE CARS FOR HIRE</h1>
             </div>
-          </nav>
-                  <!-- Navbar ends here -->
-          <div id="header">
-          <h1>VINTAGE CARS FOR HIRE</h1>
-        </div>
-</header>
-<main>
+    </header>
+    <main>
 
         <!-- Car listing starts here -->
+        <section id="carlisting">
         <div class="row mb-5">
-            <div class="col-sm-3">
+            <h4>Car Listing</h4>
+            <div class="col-md-3">
                 <div class="card">
                     <img src="./img/car1.jpg" class="card-img-top img-fluid img-thumbnail" alt="Vintage car 1">
                     <div class="card-body">
@@ -46,7 +47,7 @@
                     </div>
                   </div>
             </div>
-            <div class="col-sm-3">
+            <div class="col-md-3">
                 <div class="card">
                     <img src="./img/car2.jpg" class="card-img-top img-fluid img-thumbnail" alt="Vintage car 2">
                     <div class="card-body">
@@ -56,7 +57,7 @@
                     </div>
                   </div>
             </div>
-            <div class="col-sm-3">
+            <div class="col-md-3">
                 <div class="card">
                     <img src="./img/car3.jpg" class="card-img-top img-fluid img-thumbnail" alt="Vintage car 3">
                     <div class="card-body">
@@ -66,7 +67,7 @@
                     </div>
                   </div>
             </div>
-            <div class="col-sm-3">
+            <div class="col-md-3">
                 <div class="card">
                     <img src="./img/car4.jpg" class="card-img-top img-fluid img-thumbnail" alt="Vintage car 4">
                     <div class="card-body">
@@ -77,44 +78,52 @@
                   </div>
             </div>
         </div>
+    </section>
                 <!-- Car listing ends here -->
-<container>
-                <!-- form starts here -->
-        <div class="row mb-5">
-            <form>
-                    <div class="col">
-                        <label class="form-label" for="fullName">Full name</label>
-                        <input type="text" id="fullName" class="form-control">
-                   </div>
-                    <div class="col">
-                        <label class="form-label" for="email">Email</label>
-                        <input type="email" id="email" class="form-control">
-                   </div>
-                    <div class="col">
-                        <label for="carSelect">Choose a car</label>
-                        <div class="form-floating">
-                            <select class="form-select" id="carSelect" aria-label="Floating label select example">
-                              <option selected>Open this select menu</option>
-                              <option value="1">Car one</option>
-                              <option value="2">Car two</option>
-                              <option value="3">Car three</option>
-                              <option value="3">Car four</option>
-                            </select>
-                      </div> 
-                   </div>
-                    <div class="col">
-                        <label for="floatingTextarea2">Comments</label>
-                        <div class="form-floating">
-                            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
-                          </div>
+
+                 <!-- form starts here -->
+    <section id="enquiries">
+        <container>
+            <div class="row mb-5">
+                <h4>Enquiries</h4>
+                <form>
+                        <div class="col m-2">
+                            <label class="form-label" for="fullName">Full name</label>
+                            <input type="text" id="fullName" class="form-control">
                     </div>
-                    <div class="col m-2">
-                        <button type="submit" class="btn btn-primary">Submit</button>
+                        <div class="col m-2">
+                            <label class="form-label" for="email">Email</label>
+                            <input type="email" id="email" class="form-control">
                     </div>
-          </form>
-     </div>
+                        <div class="col m-2">
+                            <label for="carSelect">Choose a car</label>
+                            <div class="form-floating">
+                                <select class="form-select" id="carSelect" aria-label="Floating label select example">
+                                <option selected>Open this select menu</option>
+                                <option value="1">Car one</option>
+                                <option value="2">Car two</option>
+                                <option value="3">Car three</option>
+                                <option value="3">Car four</option>
+                                </select>
+                        </div> 
+                    </div>
+                        <div class="col m-2">
+                            <label for="floatingTextarea2">Comments</label>
+                            <div class="form-floating">
+                                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                            </div>
+                        </div>
+                        <div class="col m-2">
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </div>
+            </form>
+        </div>
     </container>
+    </section>
                      <!-- form ends here -->
+
+                     <!-- Contact starts here -->
+                     <section id="contact">
                      <div class="row mb-5">
                          <div class="col">
                              <h4>Contact</h4>
@@ -124,6 +133,8 @@
                              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3313.0421230714!2d151.0768584155352!3d-33.86280528065781!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12bb310823de2d%3A0xede62fd9a4f4bf27!2s200%20Parramatta%20Rd%2C%20Homebush%20NSW%202140!5e0!3m2!1sen!2sau!4v1621483541816!5m2!1sen!2sau" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                          </div>
                      </div>
+                    </section>
+                    <!-- Contact ends here -->
 </main>
 <footer>
 
